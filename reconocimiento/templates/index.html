@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+		<title>Login</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" id="row-login">
+				<div class="col-4"></div>
+				<br>
+				<br>
+				<br>
+				<div class="col-12 border border-primary rounded contenedorLogin">
+					<div class="row text-center">
+						<div class="col-4"></div>
+						<div class="col-4">
+							<h1>Perfiles</h1>
+						</div>		
+					</div>
+					<div class="row">
+						<div class="col-2"></div>
+						<div class="col-3">
+							<video id="video"></video>
+							<br>
+							<h1>{{ msg }}</h1>
+							<button type="button" id="btnEntrar">Entrar</button>
+							<!-- <form onsubmit="return false" id="form-login"> -->
+							<!-- <form action="perfil/" id="form-login" method="post">
+								{% csrf_token %}
+								<div class="form-group">
+									<label>Usuario</label>
+									<input type="text" id="user" name="user" class="form-control">
+								</div>
+								<div class="form-group">
+									<label>Contraseña</label>
+									<input type="password" id="password" name="password" class="form-control">
+								</div>
+								<div class="form-group">
+									<label>Perfil de Usuario</label>
+									<select name="perfil" class="form-control">
+										<option value="1">Administrador</option>
+										<option value="2">Usuario</option>
+									</select>
+								</div>	
+								<div class="form-group">
+									<div class="col-12 text-center">
+										<input type="submit" name="enviar" id="enviar" class="btn btn-primary">
+									</div>								
+								</div>
+							</form>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal -->
+		<div class="modal" tabindex="-1" role="dialog" id="modal-login">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Error</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <p>Usuario y/o contraseña incorrectos</p>
+		      </div>
+		      <div class="modal-footer">
+		        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Fin Modal -->
+	</body>
+	<script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/funciones.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+</html>
