@@ -3,8 +3,33 @@
 	padding: 0;
 	color: red;
 }
+body{
+	width: 100vw;
+	height: 100vh;
+	background: #d9edff !important;
+}
 
 #video {
 	width: 720px;
 	height: 375px;
+}
+.vid{
+	display: flex;
+	align-items: center;
+	align-self: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: 20%;
+}
+.per{
+		color: var(--dark);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#msge{
+	color: var(--secondary);
+}
+.caja{
+	    background: #eaeef36e;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
 }

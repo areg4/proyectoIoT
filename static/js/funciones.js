@@ -127,6 +127,6 @@ jQuery(document).ready(function($){
 
 
 
-  proceso = setInterval(takeFrame,1000);
+  proceso = setInterval(takeFrame,500);
 
 });
